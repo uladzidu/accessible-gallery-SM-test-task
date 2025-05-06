@@ -1,4 +1,4 @@
-# Accessible Gallery – SmartRecruiters Test Task
+# Accessible Gallery – Test Task
 
 This is a responsive and accessible gallery component developed as part of a frontend take-home assignment.  
 It follows modern frontend best practices and complies with **WCAG 2.1 AA accessibility standards**.
