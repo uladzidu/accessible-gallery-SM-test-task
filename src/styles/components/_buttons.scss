@@ -1,0 +1,62 @@
+@import '../mixins';
+
+.gallery {
+
+  &__icon {
+    color: var(--white);
+
+    & path:hover {
+      fill: var(--primary);
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-family: var(--font-family), sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+
+    &--primary {
+      background-color: var(--primary);
+      color: var(--white);
+
+      &:hover {
+        background-color: var(--quatenary);
+        color: var(--primary);
+      }
+
+      @include focus-ring(var(--secondary));
+    }
+
+    &--secondary {
+      background-color: var(--secondary);
+      color: var(--white);
+
+      &:hover {
+        background-color: var(--quatenary);
+        color: var(--secondary);
+      }
+
+      @include focus-ring(var(--secondary));
+    }
+
+    img {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+
+
